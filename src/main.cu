@@ -6,7 +6,7 @@
 #include <string>
 #include <cuda_runtime.h>
 
-#define TILE_WIDTH 32
+#define TILE_WIDTH 64
 
 // Simple matrix multiplication kernel
 __global__ void matmulKernel(const float* A, const float* B, float* C, int n, int k, int m) {
